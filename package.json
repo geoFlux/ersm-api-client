@@ -1,7 +1,7 @@
 {
   "name": "ersm-api-client",
-  "version": "0.0.0",
-  "license": "Unlicense",
+  "version": "1.0.0",
+  "license": "MIT",
   "main": "./dist/ersm-api.js",
   "browser": "./dist/ersm-api.js",
   "typings": "./dist/ersm-api.d.ts",
@@ -10,12 +10,11 @@
     "isomorphic-fetch": "^2.2.1"
   },
   "scripts" : {
-    "prepublish" : "typings install && tsc", 
+    "prepublish" : "tsc", 
     "test": "tslint ersm-api.ts"
   },
   "devDependencies": {
     "tslint": "^3.15.1",
-    "typescript": "^1.8.10",
-    "typings": "^1.0.4"
+    "typescript": "^1.8.10"    
   }
 }
