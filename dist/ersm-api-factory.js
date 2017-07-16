@@ -1,7 +1,6 @@
 "use strict";
 var api = require('./ersm-api');
-var tmp = new api.AppDataApi;
-exports.ErsmApiFactory = function (fetch, basePath) {
+exports.ErsmApiFactory = function (basePath, fetch) {
     return {
         appData: new api.AppDataApi(fetch, basePath),
         contactPeople: new api.ContactPeopleApi(fetch, basePath),
@@ -9,3 +8,9 @@ exports.ErsmApiFactory = function (fetch, basePath) {
         contactSubCategories: new api.ContactSubCategoriesApi(fetch, basePath),
     };
 };
+// export interface ErsmApi{
+//     appData: api.AppDataApi,
+//     contactPeople: api.ContactPeopleApi,
+//     contactCategories: api.ContactCategoriesApi,
+//     contactSubCategories: api.ContactSubCategoriesApi
+// } 

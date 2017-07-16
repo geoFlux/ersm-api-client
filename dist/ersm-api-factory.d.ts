@@ -1,8 +1,7 @@
 import * as api from './ersm-api';
-export declare const ErsmApiFactory: (fetch?: api.FetchAPI, basePath?: string) => ErsmApi;
-export interface ErsmApi {
+export declare const ErsmApiFactory: (basePath?: string, fetch?: api.FetchAPI) => {
     appData: api.AppDataApi;
     contactPeople: api.ContactPeopleApi;
     contactCategories: api.ContactCategoriesApi;
     contactSubCategories: api.ContactSubCategoriesApi;
-}
+};
