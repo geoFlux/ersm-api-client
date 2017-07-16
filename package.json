@@ -2,9 +2,9 @@
   "name": "ersm-api-client",
   "version": "1.0.0",
   "license": "MIT",
-  "main": "./dist/ersm-api.js",
-  "browser": "./dist/ersm-api.js",
-  "typings": "./dist/ersm-api.d.ts",
+  "main": "./dist/ersm-api-client.js",
+  "browser": "./dist/ersm-api-client.js",
+  "typings": "./dist/ersm-api-client.d.ts",
   "dependencies": {
     "core-js": "^2.4.0",
     "isomorphic-fetch": "^2.2.1"
