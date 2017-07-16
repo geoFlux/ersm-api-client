@@ -2,8 +2,8 @@ import * as api from './ersm-api'
 
 
 
-const tmp = new api.AppDataApi
-export const ErsmApiFactory = (fetch?: api.FetchAPI, basePath?: string): ErsmApi => {
+
+export const ErsmApiFactory = (basePath?: string, fetch?: api.FetchAPI): ErsmApi => {
     return {
         appData: new api.AppDataApi(fetch, basePath),
         contactPeople: new api.ContactPeopleApi(fetch, basePath),
